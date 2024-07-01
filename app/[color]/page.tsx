@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
-import Modal from '@/components/Modal'
+import Modal from './Modal'
+import OpenModalButton from './OpenModalButton'
 
 const COLORS = {
   GREEN: 'green',
@@ -43,24 +44,6 @@ const data = [
     descriptionSubtitleStyles: 'text-primary-purple font-medium',
   },
 ]
-
-const OpenModalButton = ({
-  index,
-  handleClick,
-}: {
-  index: number
-  handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
-}) => {
-  return (
-    <button
-      className='border'
-      onClick={handleClick}
-      data-index={index}
-    >
-      Open Modal {index + 1}
-    </button>
-  )
-}
 
 const Page = ({ params }: { params: { color: string } }) => {
   const [modalVisibilities, setModalVisibilities] = useState(
