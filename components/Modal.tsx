@@ -10,6 +10,8 @@ interface ModalProps {
   subheading: string
   date: string
   time: string
+  description: string
+  index: number
 }
 
 const Modal = ({
@@ -19,18 +21,22 @@ const Modal = ({
   subheading,
   date,
   time,
+  description,
+  index,
 }: ModalProps) => {
   // Prevents scrolling when modal is open
   useEffect(() => {
     const body = document.querySelector('body') as HTMLBodyElement
-
     if (open) body.style.overflow = 'hidden'
     else body.style.overflow = 'visible'
   }, [open])
 
   if (!open) return <></>
   return (
-    <div className='fixed top-0 w-full h-full flex justify-center z-10 border border-blue-500'>
+    <div
+      className='fixed top-0 w-full h-full flex justify-center z-10 border border-blue-500'
+      data-index={index}
+    >
       {/* OVERLAY */}
       <div
         className='fixed bg-black opacity-50 w-full h-full'
@@ -77,8 +83,7 @@ const Modal = ({
           </div>
           <div className='px-6 pb-6'>
             <p className='font-medium leading-[22.4px] text-primary-black'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s
+              {description}
             </p>
           </div>
           <div className='border-t border-t-[#E5E7EB] p-6'>
