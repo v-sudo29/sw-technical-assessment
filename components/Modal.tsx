@@ -42,7 +42,7 @@ const Modal = () => {
           <p className='font-medium text-[14px] text-center text-secondary-black leading-[19.6px] mb-[10px]'>
             Lorem Ipsum is simply dummy text
           </p>
-          <button className='rounded-[8px] border w-full bg-[#32A7AD1A] font-medium text-[#292B2E33] py-4'>
+          <button className='rounded-xl w-full bg-[#32A7AD1A] font-medium text-[#292B2E33] py-4'>
             Lorem Ipsum
           </button>
         </div>
