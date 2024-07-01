@@ -7,7 +7,7 @@ const TabletLogo = () => {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
-      <g clip-path='url(#clip0_2_121)'>
+      <g clipPath='url(#clip0_2_121)'>
         <mask
           id='mask0_2_121'
           maskUnits='userSpaceOnUse'
@@ -120,10 +120,10 @@ const TabletLogo = () => {
           y2='176.461'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#63F09C' />
+          <stop stopColor='#63F09C' />
           <stop
             offset='1'
-            stop-color='#12A966'
+            stopColor='#12A966'
           />
         </linearGradient>
         <linearGradient
@@ -134,10 +134,10 @@ const TabletLogo = () => {
           y2='275.774'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#66E0E7' />
+          <stop stopColor='#66E0E7' />
           <stop
             offset='1'
-            stop-color='#279EA5'
+            stopColor='#279EA5'
           />
         </linearGradient>
         <linearGradient
@@ -148,10 +148,10 @@ const TabletLogo = () => {
           y2='224.183'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#FBC53D' />
+          <stop stopColor='#FBC53D' />
           <stop
             offset='1'
-            stop-color='#ED8827'
+            stopColor='#ED8827'
           />
         </linearGradient>
         <clipPath id='clip0_2_121'>
