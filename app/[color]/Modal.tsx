@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import MobileLogo from './logos/MobileLogo'
-import TabletLogo from './logos/TabletLogo'
-import CloseIcon from './icons/CloseIcon'
+import MobileLogo from '../_components/logos/MobileLogo'
+import TabletLogo from '../_components/logos/TabletLogo'
+import CloseIcon from '../_components/icons/CloseIcon'
 
 interface ModalProps {
   open: boolean
