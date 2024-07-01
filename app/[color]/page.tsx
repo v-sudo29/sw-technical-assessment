@@ -16,6 +16,9 @@ const data = [
     time: '06:00pm - 07:30pm EST',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+    descriptionStyles: 'leading-[22.4px] font-medium',
+    descriptionTitleStyles: 'text-primary-purple font-bold',
+    descriptionSubtitleStyles: 'text-secondary-black',
   },
   {
     title: 'Modal 2',
@@ -24,6 +27,9 @@ const data = [
     time: '09:00pm - 09:30pm PST',
     description:
       'Lorem Ipsum is simply dummy cillum dolore eu fugiat nulla pariatur. cillum dolore eu fugiat nulla pariatur.',
+    descriptionStyles: 'text-sm leading-[19.6px] font-medium',
+    descriptionTitleStyles: 'text-secondary-black font-bold',
+    descriptionSubtitleStyles: 'text-secondary-black font-medium',
   },
   {
     title: 'Modal 3',
@@ -32,6 +38,9 @@ const data = [
     time: '07:00pm - 07:30pm EST',
     description:
       'Lorem Ipsum qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit',
+    descriptionStyles: 'leading-[22.4px] font-medium',
+    descriptionTitleStyles: 'text-secondary-black font-medium',
+    descriptionSubtitleStyles: 'text-primary-purple font-medium',
   },
 ]
 
@@ -79,6 +88,9 @@ const Page = ({ params }: { params: { color: string } }) => {
         date={currentData.date}
         time={currentData.time}
         description={currentData.description}
+        descriptionStyles={currentData.descriptionStyles}
+        descriptionTitleStyles={currentData.descriptionTitleStyles}
+        descriptionSubtitleStyles={currentData.descriptionSubtitleStyles}
         index={index}
       />
     )

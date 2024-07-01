@@ -11,6 +11,9 @@ interface ModalProps {
   date: string
   time: string
   description: string
+  descriptionStyles: string
+  descriptionTitleStyles: string
+  descriptionSubtitleStyles: string
   index: number
 }
 
@@ -22,6 +25,9 @@ const Modal = ({
   date,
   time,
   description,
+  descriptionStyles,
+  descriptionTitleStyles,
+  descriptionSubtitleStyles,
   index,
 }: ModalProps) => {
   // Prevents scrolling when modal is open
@@ -67,10 +73,16 @@ const Modal = ({
         <div className='bg-white'>
           <div className='flex justify-between px-6 pt-6 pb-4'>
             <div>
-              <p className='text-sm leading-[19.6px] text-secondary-black'>
+              <p
+                className={
+                  'text-sm leading-[19.6px] mb-1' +
+                  ' ' +
+                  descriptionSubtitleStyles
+                }
+              >
                 Lorem Ipsum
               </p>
-              <p className='leading-[22.4px] font-bold text-primary-purple'>
+              <p className={'leading-[22.4px]' + ' ' + descriptionTitleStyles}>
                 Lorem Ipsum
               </p>
             </div>
@@ -82,7 +94,11 @@ const Modal = ({
             </button>
           </div>
           <div className='px-6 pb-6'>
-            <p className='font-medium leading-[22.4px] text-primary-black'>
+            <p
+              className={
+                'font-medium text-primary-black' + ' ' + descriptionStyles
+              }
+            >
               {description}
             </p>
           </div>
