@@ -97,6 +97,13 @@ const Page = ({ params }: { params: { color: string } }) => {
       ? 'bg-[red]'
       : 'bg-[white]'
 
+  if (
+    params.color !== COLORS.GREEN &&
+    params.color !== COLORS.BLUE &&
+    params.color !== COLORS.RED
+  )
+    return <></>
+
   const allModals = data.map((currentData, index) => {
     return (
       <Modal
@@ -117,12 +124,6 @@ const Page = ({ params }: { params: { color: string } }) => {
       />
     )
   })
-  if (
-    params.color !== COLORS.GREEN &&
-    params.color !== COLORS.BLUE &&
-    params.color !== COLORS.RED
-  )
-    return <></>
 
   return (
     <main className={'min-h-[200vh]' + ' ' + pageColor}>
