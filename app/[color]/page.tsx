@@ -44,6 +44,24 @@ const data = [
   },
 ]
 
+const OpenModalButton = ({
+  index,
+  handleClick,
+}: {
+  index: number
+  handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+}) => {
+  return (
+    <button
+      className='border'
+      onClick={handleClick}
+      data-index={index}
+    >
+      Open Modal {index + 1}
+    </button>
+  )
+}
+
 const Page = ({ params }: { params: { color: string } }) => {
   const [modalVisibilities, setModalVisibilities] = useState(
     () => data.map((x) => false) ?? []
@@ -108,56 +126,38 @@ const Page = ({ params }: { params: { color: string } }) => {
       <div className='flex gap-2'>
         {params.color === COLORS.GREEN && (
           <>
-            <button
-              className='border'
-              onClick={handleModalOpen}
-              data-index={0}
-            >
-              Open Modal 1
-            </button>
-            <button
-              className='border'
-              onClick={handleModalOpen}
-              data-index={1}
-            >
-              Open Modal 2
-            </button>
+            <OpenModalButton
+              index={0}
+              handleClick={handleModalOpen}
+            />
+            <OpenModalButton
+              index={1}
+              handleClick={handleModalOpen}
+            />
           </>
         )}
         {params.color === COLORS.BLUE && (
           <>
-            <button
-              className='border'
-              onClick={handleModalOpen}
-              data-index={1}
-            >
-              Open Modal 2
-            </button>
-            <button
-              className='border'
-              onClick={handleModalOpen}
-              data-index={2}
-            >
-              Open Modal 3
-            </button>
+            <OpenModalButton
+              index={1}
+              handleClick={handleModalOpen}
+            />
+            <OpenModalButton
+              index={2}
+              handleClick={handleModalOpen}
+            />
           </>
         )}
         {params.color === COLORS.RED && (
           <>
-            <button
-              className='border'
-              onClick={handleModalOpen}
-              data-index={0}
-            >
-              Open Modal 1
-            </button>
-            <button
-              className='border'
-              onClick={handleModalOpen}
-              data-index={2}
-            >
-              Open Modal 3
-            </button>
+            <OpenModalButton
+              index={0}
+              handleClick={handleModalOpen}
+            />
+            <OpenModalButton
+              index={2}
+              handleClick={handleModalOpen}
+            />
           </>
         )}
       </div>

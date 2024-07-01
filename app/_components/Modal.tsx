@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import MobileLogo from './MobileLogo'
-import TabletLogo from './TabletLogo'
+import MobileLogo from './logos/MobileLogo'
+import TabletLogo from './logos/TabletLogo'
 import CloseIcon from './icons/CloseIcon'
 
 interface ModalProps {
