@@ -1,3 +1,5 @@
+import Modal from '@/components/Modal'
+
 const COLORS = {
   GREEN: 'green',
   BLUE: 'blue',
@@ -17,6 +19,7 @@ const Page = ({ params }: { params: { color: string } }) => {
   return (
     <main className={'min-h-[200vh]' + ' ' + pageColor}>
       <h1 className='text-white uppercase'>{params.color}</h1>
+      <Modal />
     </main>
   )
 }
