@@ -1,4 +1,4 @@
-const Logo = () => {
+const MobileLogo = () => {
   return (
     <svg
       width='171'
@@ -10,7 +10,6 @@ const Logo = () => {
       <g clip-path='url(#clip0_2_309)'>
         <mask
           id='mask0_2_309'
-          // style='mask-type:luminance'
           maskUnits='userSpaceOnUse'
           x='63'
           y='69'
@@ -25,7 +24,6 @@ const Logo = () => {
         <g mask='url(#mask0_2_309)'>
           <mask
             id='mask1_2_309'
-            // style='mask-type:luminance'
             maskUnits='userSpaceOnUse'
             x='80'
             y='86'
@@ -46,7 +44,6 @@ const Logo = () => {
         </g>
         <mask
           id='mask2_2_309'
-          // style='mask-type:luminance'
           maskUnits='userSpaceOnUse'
           x='66'
           y='120'
@@ -61,7 +58,6 @@ const Logo = () => {
         <g mask='url(#mask2_2_309)'>
           <mask
             id='mask3_2_309'
-            // style='mask-type:luminance'
             maskUnits='userSpaceOnUse'
             x='76'
             y='143'
@@ -82,7 +78,6 @@ const Logo = () => {
         </g>
         <mask
           id='mask4_2_309'
-          // style='mask-type:luminance'
           maskUnits='userSpaceOnUse'
           x='100'
           y='58'
@@ -97,7 +92,6 @@ const Logo = () => {
         <g mask='url(#mask4_2_309)'>
           <mask
             id='mask5_2_309'
-            // style='mask-type:luminance'
             maskUnits='userSpaceOnUse'
             x='135'
             y='72'
@@ -173,4 +167,4 @@ const Logo = () => {
   )
 }
 
-export default Logo
+export default MobileLogo

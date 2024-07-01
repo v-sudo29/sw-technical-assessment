@@ -18,6 +18,11 @@ const config: Config = {
         'primary-black': '#292B2E',
         'secondary-black': '#4A4A52',
       },
+      fontFamily: {
+        inter: 'var(--font-inter)',
+        poppins: 'var(--font-poppins)',
+        roboto: 'var(--font-roboto)',
+      },
     },
   },
   plugins: [],
