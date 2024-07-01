@@ -17,9 +17,15 @@ const data = [
     time: '06:00pm - 07:30pm EST',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-    descriptionStyles: 'leading-[22.4px] font-medium',
+    descriptionStyles:
+      'leading-[22.4px] font-medium sm:leading-[19.6px] sm:text-sm sm:font-medium md:font-normal',
     descriptionTitleStyles: 'text-primary-purple font-bold',
-    descriptionSubtitleStyles: 'text-secondary-black',
+    descriptionSubtitleStyles:
+      'text-secondary-black text-sm leading-[19.6px] sm:font-medium md:font-normal',
+    textAboveButtonStyles:
+      'font-medium text-sm leading-[19.6px] sm:font-normal md:font-medium',
+    buttonTextStyles:
+      'font-medium tracking-[0.5px] sm:uppercase sm:font-poppins sm:font-semibold sm:leading-[22.4px] md:font-normal',
   },
   {
     title: 'Modal 2',
@@ -28,9 +34,16 @@ const data = [
     time: '09:00pm - 09:30pm PST',
     description:
       'Lorem Ipsum is simply dummy cillum dolore eu fugiat nulla pariatur. cillum dolore eu fugiat nulla pariatur.',
-    descriptionStyles: 'text-sm leading-[19.6px] font-medium',
-    descriptionTitleStyles: 'text-secondary-black font-bold',
-    descriptionSubtitleStyles: 'text-secondary-black font-medium',
+    descriptionStyles:
+      'text-sm leading-[19.6px] font-medium sm:text-base sm:leading-[22.4px] md:text-sm md:font-normal md:leading-[19.6px]',
+    descriptionTitleStyles:
+      'text-secondary-black font-bold sm:text-primary-purple md:font-medium',
+    descriptionSubtitleStyles:
+      'text-secondary-black font-medium text-sm leading-[19.6px]',
+    textAboveButtonStyles:
+      'font-medium text-sm leading-[19.6px] md:leading-[21px] md:text-[15px]',
+    buttonTextStyles:
+      'font-medium tracking-[0.5px] sm:leading-[22.4px] sm:font-poppins sm:tracking-normal',
   },
   {
     title: 'Modal 3',
@@ -39,9 +52,15 @@ const data = [
     time: '07:00pm - 07:30pm EST',
     description:
       'Lorem Ipsum qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit',
-    descriptionStyles: 'leading-[22.4px] font-medium',
-    descriptionTitleStyles: 'text-secondary-black font-medium',
-    descriptionSubtitleStyles: 'text-primary-purple font-medium',
+    descriptionStyles:
+      'leading-[22.4px] font-medium sm:text-sm sm:leading-[19.6px]',
+    descriptionTitleStyles:
+      'text-secondary-black font-medium sm:font-semibold sm:text-primary-purple',
+    descriptionSubtitleStyles:
+      'text-primary-purple font-medium text-sm leading-[19.6px] sm:font-normal sm:text-secondary-black md:text-base md:leading-[22.4px] md:uppercase',
+    textAboveButtonStyles: 'font-medium text-sm leading-[19.6px]',
+    buttonTextStyles:
+      'font-medium tracking-[0.5px] sm:font-poppins sm:leading-[22.4px] sm:tracking-normal md:text-lg md:leading-[32px] md:font-normal md:tracking-[0.47px]',
   },
 ]
 
@@ -92,6 +111,8 @@ const Page = ({ params }: { params: { color: string } }) => {
         descriptionStyles={currentData.descriptionStyles}
         descriptionTitleStyles={currentData.descriptionTitleStyles}
         descriptionSubtitleStyles={currentData.descriptionSubtitleStyles}
+        textAboveButtonStyles={currentData.textAboveButtonStyles}
+        buttonTextStyles={currentData.buttonTextStyles}
         index={index}
       />
     )

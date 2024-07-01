@@ -14,6 +14,8 @@ interface ModalProps {
   descriptionStyles: string
   descriptionTitleStyles: string
   descriptionSubtitleStyles: string
+  textAboveButtonStyles: string
+  buttonTextStyles: string
   index: number
 }
 
@@ -28,6 +30,8 @@ const Modal = ({
   descriptionStyles,
   descriptionTitleStyles,
   descriptionSubtitleStyles,
+  textAboveButtonStyles,
+  buttonTextStyles,
   index,
 }: ModalProps) => {
   // Prevents scrolling when modal is open
@@ -73,13 +77,7 @@ const Modal = ({
         <div className='bg-white'>
           <div className='flex justify-between px-6 pt-6 pb-4'>
             <div>
-              <p
-                className={
-                  'text-sm leading-[19.6px] mb-1' +
-                  ' ' +
-                  descriptionSubtitleStyles
-                }
-              >
+              <p className={'mb-1' + ' ' + descriptionSubtitleStyles}>
                 Lorem Ipsum
               </p>
               <p className={'leading-[22.4px]' + ' ' + descriptionTitleStyles}>
@@ -103,10 +101,22 @@ const Modal = ({
             </p>
           </div>
           <div className='border-t border-t-[#E5E7EB] p-6'>
-            <p className='font-medium text-sm text-center text-secondary-black leading-[19.6px] mb-[10px] sm:font-normal'>
+            <p
+              className={
+                'text-center text-secondary-black mb-[10px]' +
+                ' ' +
+                textAboveButtonStyles
+              }
+            >
               Lorem Ipsum is simply dummy text
             </p>
-            <button className='rounded-xl w-full bg-[#32A7AD1A] font-medium font-roboto text-[#292B2E33] py-4 sm:uppercase sm:font-semibold'>
+            <button
+              className={
+                'rounded-xl w-full bg-[#32A7AD1A] font-roboto text-[#292B2E33] py-4' +
+                ' ' +
+                buttonTextStyles
+              }
+            >
               Lorem Ipsum
             </button>
           </div>
